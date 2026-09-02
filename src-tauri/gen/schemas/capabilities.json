@@ -1,0 +1,1 @@
+{"main-capability":{"identifier":"main-capability","description":"Only the local manager webview receives Tauri core permissions.","local":true,"webviews":["main"],"permissions":["core:default"]}}
