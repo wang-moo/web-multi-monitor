@@ -1,0 +1,19 @@
+[package]
+name = "web-multi-monitor"
+version = "0.1.3"
+description = "Launches mutually isolated web sessions"
+authors = ["local"]
+edition = "2021"
+
+[lib]
+name = "web_multi_monitor_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["unstable"] }
+
+[patch.crates-io]
+tauri-runtime-wry = { path = "../vendor/tauri-runtime-wry" }
